@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a1a06eb78.js" crossorigin="anonymous"></script>
     <script src="src/index.js"></script>
     <title>Portfolio</title>
 </head>
@@ -17,17 +18,20 @@
     <section class="hero">
         <nav>
             <img class="logo" src="src/images/pullupBB.png" alt="Beton's logo">
-            <ul>
-                <li>About me</li>
-                <li>Workouts</li>
-                <li>Contact</li>
+            <ul id="nav-list">
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
         <div class="hero-area">
             <div class="hero-text">
                 <h1>Beton</h1>
                 <p>Athletic nerd</p>
-                <div class="button">About me</div>
+                <div class="button"><a href="#about-me">About me</a></div>
             </div>
             <div class="socials">
                 <div><a href="" class="social"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50"
@@ -50,7 +54,7 @@
         </div>
 
     </section>
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
         <div class="information">
             <h2>About me</h2>
             <p>Hello, my name is Berto. I enjoy lifting weights, calisthenics, and running.</p>
@@ -59,7 +63,7 @@
             <img class="gym" src="src/images/athletic.PNG" alt="gym pic">
         </div>
     </section>
-    <section class="sub-section-alternative">
+    <section class="sub-section-alternative" id="workouts">
         <h2>Workouts</h2>
         <div class="project-container">
             <div class="project-card">
@@ -67,33 +71,36 @@
                 <h3>Workout One</h3>
                 <p class="subtext">Like the pump from arms day.</p>
                 <hr />
-                <p class="subtext">View here</p>
+                <p class="subtext"> <a class="project-link" href="https://www.bodybuilding.com">View here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="src/images/chinups.jpg" alt="Project One Image">
                 <h3>Workout two</h3>
                 <p class="subtext">A good upper body compound exercise</p>
                 <hr />
-                <p class="subtext">View here</p>
+                <p class="subtext"> <a class="project-link" href="https://www.amazon.com">View here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="src/images/dips.jpg" alt="Project One Image">
                 <h3>Workout three</h3>
                 <p class="subtext">Another good upper body compound exercise</p>
                 <hr />
-                <p class="subtext">View here</p>
+                <p class="subtext"> <a class="project-link" href="https://www.chuzefitness.com">View here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="src/images/squats.jpg" alt="Project One Image">
                 <h3>Workout four</h3>
                 <p class="subtext">A good leg exercise</p>
                 <hr />
-                <p class="subtext">View here</p>
+                <p class="subtext"> <a class="project-link" href="https://www.cnn.com">View here</a></p>
             </div>
         </div>
     </section>
-    <footer></footer>
-    <!-- <h1>Keep proving 'em wrong!</h1> -->
+    <footer id="contact">
+        <h2>Contact me</h2>
+        <p>berlift@gmail.com</p>
+    </footer>
+
 </body>
 
 </html>
